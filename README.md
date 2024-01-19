@@ -1,21 +1,19 @@
-
-# toolbox
+# toolbox - Description
 
 A collection of tools, scripts, functions, files, etc... that can be used for projects.
 
-## bash
+# bash
 
-### choose_default_os.sh
+# cpp
 
-If you are running a dual boot PC; this will let you choose the default option when loading the os.
+# python
 
-### get_git_branch.sh
+# templates
 
-Checks if the current working directory is a git branch. If it is, it returns the name of the current branch; otherwise returns "NOT A GIT REPO".
+A collection of template files
 
-### update.sh
+# tools
 
-1) Updates the latest stable Google-Chrome package
-1) Updates all known packages
-1) Removes all unneccessary packages
-1) Upgrades all known packages to newer versions
+A collection of general tools
+
+## SimUI
