@@ -1,4 +1,5 @@
 # standard imports
+import _tkinter
 
 # pytools imports
 
