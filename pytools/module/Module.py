@@ -2,13 +2,20 @@
 
 # toolbox imports
 
-# {tool} imports
+# Module imports
 
 # =============================================================================
-# {tool} Definition
+# Module Definition
 # =============================================================================
 
-class {tool}(Module):
+class Module:
 
     def __init__(self, *args, **kwargs):
         pass
+
+    def save_state(self, *args, **kwargs):
+        pass
+
+    def load_state(self, *args, **kwargs):
+        pass
+

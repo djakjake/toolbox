@@ -2,6 +2,7 @@
 import _tkinter
 
 # pytools imports
+from pytools.module import Module
 
 # SimUI imports
 from GUI import GUI
@@ -10,10 +11,11 @@ from GUI import GUI
 # SimUI Definition
 # =============================================================================
 
-class SimUI(GUI):
+class SimUI(Module, GUI):
 
     def __init__(self, *args, **kwargs):
-        pass
+        Module.__init__(self, *args, **kwargs)
+        GUI.__init__(self, *args, **kwargs)
 
     def save_state(self, *args, **kwargs):
         pass
