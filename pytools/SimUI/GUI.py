@@ -1,29 +1,29 @@
 # standard imports
-import _tkinter
 
 # pytools imports
 
 # SimUI imports
-from GUI import GUI
 
 # =============================================================================
-# SimUI Definition
+# GUI Definition
 # =============================================================================
 
-class SimUI(GUI):
+class GUI:
 
     def __init__(self, *args, **kwargs):
         pass
 
-    def save_state(self, *args, **kwargs):
+    def _create_frame(self, *args, **kwargs):
         pass
 
-    def load_state(self, *args, **kwargs):
+    def _destroy_frame(self, *args, **kwargs):
         pass
 
-    def load_input_file(self, *args, **kwargs):
+    def _create_box_select_multiple(self, *args, **kwargs):
         pass
 
-    def run_executable_program(self, *args, **kwargs):
+    def _create_box_select_binary(self, *args, **kwargs):
         pass
 
+    def _create_box_user_input(self, *args, **kwargs):
+        pass

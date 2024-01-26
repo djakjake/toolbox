@@ -13,7 +13,8 @@ A graphical user interface that allows the user to:
 
 
 # Requirements
-- Python 3.6+
+- Python 3.6+ | 3.10.12
+- tkinter 3.0+ | 8.6
 
 
 
@@ -66,3 +67,37 @@ A graphical user interface that allows the user to:
 
 
 # How-To
+
+
+
+# Modules
+
+
+
+## SimUI(GUI)
+
+### __init__(self, *args, **kwargs):
+
+### save_state(self, *args, **kwargs):
+
+### load_state(self, *args, **kwargs):
+
+### load_input_file(self, *args, **kwargs):
+
+### run_executable_program(self, *args, **kwargs):
+
+
+
+## GUI
+
+### __init__(self, *args, **kwargs):
+
+### _create_frame(self, *args, **kwargs):
+
+### _destroy_frame(self, *args, **kwargs):
+
+### _create_box_select_multiple(self, *args, **kwargs):
+
+### _create_box_select_binary(self, *args, **kwargs):
+
+### _create_box_user_input(self, *args, **kwargs):
