@@ -17,12 +17,6 @@ class SimUI(Module, GUI):
         Module.__init__(self, *args, **kwargs)
         GUI.__init__(self, *args, **kwargs)
 
-    def save_state(self, *args, **kwargs):
-        pass
-
-    def load_state(self, *args, **kwargs):
-        pass
-
     def load_input_file(self, *args, **kwargs):
         pass
 
