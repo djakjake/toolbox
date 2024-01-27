@@ -32,6 +32,14 @@ light_blue='\e[94m'
 PS1="$light_red\d \t$reset | $light_yellow\s\v$reset | $light_green\$(get_git_branch)$reset | $light_blue\w$reset\n>> "
 ```
 
+## **install_flatpak.sh**
+
+This script follows the [instructions for installing flatpak](https://flathub.org/setup/Ubuntu).
+
+Tested on:
+- Ubuntu 22.04.3 LTS
+- bash5.1
+
 ## **setEnv.sh $1**
 
 This script is used to set up and/or activate a virtual python environment.
