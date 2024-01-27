@@ -1,40 +1,55 @@
-# {tool}
+# toolbox - Description
 
+A collection of tools, scripts, functions, files, etc... that can be used for projects.
 
+# bash
 
-# Description
+## setEnv.sh $1
 
+- must receive valid directory as `$1`
+- Creates a new python virtual environment at `$1/vEnv`.
+- Activates `$1/vEnv`
+- if a `requirements.txt` file exists in `$1`, installs requirements.
 
+# cpp
 
-# Requirements
+# pytools
 
+## functions
 
+### parse_args(*args, **kwargs):
 
-# Input
+```python
+"""
+DESCRIPTION:
+takes any number of argument parser objects and/or key word arguments and
+organizes them all into a single dictionary.
 
-| parameter | default | units | type |description |
-|-----------|---------|-------|------|------------|
+the argument parser objects are parsed first and are parsed in the order
+they are given. the given keywords are added last.
 
+for any arguments/keys that are received multiple times, priority is given
+to the last one received.
 
+INPUT:
+*args       argument parser objects
+**kwargs    key word arguments
 
-# Output
+OUTPUT:
+dict
+"""
+```
 
-|--------------------------------------|
-| file                                 |
-|--------------------------------------|
-| basename | destination | description |
-|----------|-------------|-------------|
+## scripts
 
-|----------------------------------------|
-| data                                   |
-|----------------------------------------|
-| parameter | units | type | description |
-|-----------|-------|------|-------------|
+## Module
 
+## SimUI
 
+# templates
 
-# Limitations and Assumptions
+A collection of template files
 
+# tools
 
-
-# How-To
+A collection of general tools
