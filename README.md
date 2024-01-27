@@ -4,9 +4,15 @@ A collection of tools, scripts, functions, files, etc... that can be used for pr
 
 # **bash**
 
+[README.md](https://github.com/djakjake/toolbox/blob/main/bash/README.md)
+
 # **cpp**
 
+[README.md](https://github.com/djakjake/toolbox/blob/main/cpp/README.md)
+
 # **pytools**
+
+[README.md](https://github.com/djakjake/toolbox/blob/main/pytools/README.md)
 
 # **templates**
 
