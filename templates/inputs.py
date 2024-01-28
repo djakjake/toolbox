@@ -2,7 +2,7 @@
 import argparse
 
 # pytools imports
-import pytools.module as module
+import pytools.parents.module as module
 
 # SimUI imports
 
@@ -18,7 +18,7 @@ class Default:
 # =============================================================================
 
 parser = argparse.ArgumentParser(
-    description = '{tool} arguments',
+    description = '{Tool} arguments',
     formatter_class = argparse.ArgumentDefaultsHelpFormatter,
     parents = [module.parser],
 )
@@ -29,6 +29,6 @@ parser = argparse.ArgumentParser(
 
 #parser.add_argument(
 #    help = """
-#    [{tool}]
+#    [{Tool}]
 #    """
 #)
