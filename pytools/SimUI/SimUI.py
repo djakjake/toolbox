@@ -2,7 +2,7 @@
 import _tkinter
 
 # pytools imports
-from pytools.module import Module
+from pytools.parents.module import Module
 
 # SimUI imports
 from GUI import GUI

@@ -2,7 +2,7 @@
 import argparse
 
 # pytools imports
-import pytools.module as module
+import pytools.parents.module as module
 
 # SimUI imports
 
