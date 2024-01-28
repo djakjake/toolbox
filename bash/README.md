@@ -40,6 +40,12 @@ Tested on:
 - Ubuntu 22.04.3 LTS
 - bash5.1
 
+## **replace.sh $1 $2 ($3)**
+
+This script exports the function to the bash environment, `replace`.
+
+This script replaces all instances of `$1` with `$2`, inside the current working directory (or `$3`, if given).
+
 ## **setEnv.sh $1**
 
 This script is used to set up and/or activate a virtual python environment.
