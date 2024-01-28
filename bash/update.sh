@@ -9,7 +9,7 @@ sudo apt install google-chrome-stable
 # updating known packages
 sudo apt update
 
-# removing uncessary packages
+# removing unnecessary packages
 sudo apt autoremove
 
 # upgrading known packages to newer versions
