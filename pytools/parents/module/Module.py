@@ -6,12 +6,13 @@ import pickle
 from pytools.parents.print import Print
 
 # Module imports
+from . inputs import Default
 
 # =============================================================================
 # Module Definition
 # =============================================================================
 
-class Module(Print):
+class Module(Default, Print):
 
     def __init__(self, *args, **kwargs):
 

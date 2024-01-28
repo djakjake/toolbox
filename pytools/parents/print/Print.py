@@ -3,12 +3,13 @@
 # toolbox imports
 
 # Print imports
+from . inputs import Default
 
 # =============================================================================
 # Print Definition
 # =============================================================================
 
-class Print:
+class Print(Default):
 
     def __init__(self, *args, **kwargs):
         pass

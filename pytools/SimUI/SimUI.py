@@ -6,12 +6,13 @@ from pytools.parents.module import Module
 
 # SimUI imports
 from GUI import GUI
+from inputs import Default
 
 # =============================================================================
 # SimUI Definition
 # =============================================================================
 
-class SimUI(Module, GUI):
+class SimUI(Default, Module, GUI):
 
     def __init__(self, *args, **kwargs):
         Module.__init__(self, *args, **kwargs)
