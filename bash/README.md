@@ -49,6 +49,16 @@ This script is used to set up and/or activate a virtual python environment.
 - Activates `$1/vEnv`
 - if a `requirements.txt` file exists in `$1`, installs requirements.
 
+## **system_info.sh**
+
+View system and environmental info that is being used by _toolbox_.
+
+The following version information is included:
+- OS
+- bash
+- python
+- g++ compiler
+
 ## **update.sh**
 
 - fetches and installs the latest stable release of Chrome

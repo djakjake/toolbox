@@ -2,6 +2,11 @@
 
 A collection of tools, scripts, functions, files, etc... that can be used for projects.
 
+_toolbox_ was developed and tested with the following system and environment:
+- **OS**          : Ubuntu 22.04.3 LTS
+- **python**      : Python 3.10.12
+- **g++ compiler**: g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+
 # **directories**
 
 ## **bash**
