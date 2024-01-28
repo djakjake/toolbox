@@ -12,6 +12,13 @@ if [ -z "$DIR_TOOLBOX" ]; then
     declare -x DIR_PYTOOLS=$DIR_TOOLBOX/pytools
     echo "set DIR_PYTOOLS to $DIR_PYTOOLS"
 
+    # souce all functions found with exports
+    readarray -d '' -t targets < <(grep --null -rl "export -f" $DIR_TOOLBOX/bash)
+    for item in ${targets[@]}; do
+        echo "sourcing $item"
+        source $item
+    done
+
 else
 
     echo "Already sourced ${BASH_SOURCE[0]}"
