@@ -3,6 +3,7 @@ import os
 import pickle
 
 # toolbox imports
+from pytools.parents.print import Print
 
 # Module imports
 
@@ -10,7 +11,7 @@ import pickle
 # Module Definition
 # =============================================================================
 
-class Module:
+class Module(Print):
 
     def __init__(self, *args, **kwargs):
 
@@ -29,6 +30,9 @@ class Module:
 
         # decide on the state file path
         self.sate_file = os.path.join(self.path_output, f"{self.tool_name}_state.pkl")
+
+        # print the current attributes to terminal out
+        self._print("starting attributes:", self.__dict__)
 
     def save_state(self, *args, **kwargs):
 

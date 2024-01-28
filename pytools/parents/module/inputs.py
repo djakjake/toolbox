@@ -3,6 +3,7 @@ import argparse
 import os
 
 # pytools imports
+import pytools.parents.print as _print
 
 # Module imports
 
@@ -25,6 +26,7 @@ parser = argparse.ArgumentParser(
     description = 'Module arguments',
     formatter_class = argparse.ArgumentDefaultsHelpFormatter,
     add_help = False,
+    parents = [_print.parser],
 )
 
 # =============================================================================
