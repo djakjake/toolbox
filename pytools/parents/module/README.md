@@ -26,12 +26,10 @@
 ### Outputs
 
 File
-|--------------------------------------|
 | basename | destination | description |
 |----------|-------------|-------------|
 
 Data
-|----------------------------------------|
 | parameter | units | type | description |
 |-----------|-------|------|-------------|
 
@@ -56,7 +54,7 @@ Input:
 #### `load_state(self, *args, output=False, **kwargs)`
 
 Input:
-'state_file = self.state_file`
+`state_file = self.state_file`
 `output = False`
 
 If the selected state file exists, an `ERROR` is printed and the program ends; otherwise, the contents are loaded and are either output or saved as attributes.
@@ -72,7 +70,7 @@ Looks for specified `key` in `kwargs` dictionary.
 #### `_error(self, *msgs, **kwargs)`
 
 Input:
-*msgs
+`*msgs`
 
 Prints an error message of the form:
 ```bash
