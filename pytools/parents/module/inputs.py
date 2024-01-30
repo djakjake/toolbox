@@ -16,6 +16,7 @@ class Default:
     flag_load_state = False
     flag_save_state = False
     path_output = os.getcwd()
+    state_file = None
     tool_name = None
 
 # =============================================================================
@@ -69,6 +70,15 @@ parser.add_argument(
     help = """
     [Module]
     the path were any/all output is directed.
+    """
+)
+
+parser.add_argument(
+    '--state_file',
+    default = Default.state_file,
+    help = """
+    [Module]
+    the path to the previous saved state file.
     """
 )
 
