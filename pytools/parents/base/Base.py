@@ -1,15 +1,16 @@
 # standard imports
+import sys
 
 # toolbox imports
 
-# {tool} imports
-from inputs import Default
+# base imports
+from . inputs import Default
 
 # =============================================================================
-# {Tool} Definition
+# Base Definition
 # =============================================================================
 
-class {Tool}(Default):
+class Base(Default):
 
     # =========================================================================
     # -------------------------------------------------------------------------

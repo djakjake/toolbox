@@ -50,12 +50,4 @@ The `Print` constructor. As of right now, no specialized print instructions exis
 
 #### **_generate_decorator(self, \*args, \*\*kwargs)**
 
-#### **_choose_param(key, \*default, \*\*kwargs)**
-
-Looks for specified `key` in `kwargs` dictionary.
-- If the `key` does exist, it will fetch and return the item from the `kwargs` dictionary.
-- If the `key` does not exist and `default` was provided, will return the `default` value.
-- If the `key` does not exist and `default` was not provided, will attempt to fetch and return the 'key` attribute from the locally defined `Default` class.
-- If all else fails, perform a hard exit
-
 # **Functions**

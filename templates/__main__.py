@@ -1,14 +1,15 @@
 # standard imports
 
 # toolbox imports
+from pytools.functions import parse_args
 
 # {tool} imports
+from {Tool} import {Tool}
 
 # =============================================================================
 # {tool} Definition
 # =============================================================================
 
-class {tool}(Module):
-
-    def __init__(self, *args, **kwargs):
-        pass
+if "__main__" == __name__:
+    kwargs = parse_args(parser)
+    {Tool}(**kwargs)

@@ -2,10 +2,10 @@
 import argparse
 import os
 
-# pytools imports
+# toolbox imports
 import pytools.parents.print as _print
 
-# Module imports
+# module imports
 
 # =============================================================================
 # argument defaults

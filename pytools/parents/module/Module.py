@@ -5,7 +5,7 @@ import pickle
 # toolbox imports
 from pytools.parents.print import Print
 
-# Module imports
+# module imports
 from . inputs import Default
 
 # =============================================================================
@@ -72,6 +72,34 @@ class Module(Default, Print):
             return contents
         else:
             self.__dict__.update(contents)
+
+    # =========================================================================
+
+    @staticmethod
+    def _choose_param(key, *default, **kwargs):
+        if key in kwargs:
+            return kwargs[key]
+        elif len(default) == 1:
+            return default[0]
+        elif hasattr(Default, key):
+            return getattr(Default, key)
+        else:
+            self._error(
+                "could not determine value from:",
+                "key          : {key}",
+                "default      : {default}",
+                "kwargs (keys): {kwargs.keys()}",
+            )
+
+    # =========================================================================
+
+    def _error(self, *msgs, **kwargs):
+        func_name = sys._getframe(1).f_code.co_name # get the name of the calling function
+        err_msg = "ERROR: "
+        ljust = len(err_msg)
+        msgs = [f"{err_msg}[{func_name}]"] + [msg.ljust(ljust) for msg in args]
+        self._print(*msgs, **kwargs)
+        exit()
 
     # =========================================================================
 

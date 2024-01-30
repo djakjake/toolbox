@@ -61,5 +61,27 @@ Input:
 
 If the selected state file exists, an `ERROR` is printed and the program ends; otherwise, the contents are loaded and are either output or saved as attributes.
 
+#### **_choose_param(key, \*default, \*\*kwargs)**
+
+Looks for specified `key` in `kwargs` dictionary.
+- If the `key` does exist, it will fetch and return the item from the `kwargs` dictionary.
+- If the `key` does not exist and `default` was provided, will return the `default` value.
+- If the `key` does not exist and `default` was not provided, will attempt to fetch and return the 'key` attribute from the locally defined `Default` class.
+- If all else fails, perform a hard exit
+
+#### **_error(self, \*msgs, \*\*kwargs)**
+
+Input:
+*msgs
+
+Prints an error message of the form:
+```bash
+ERROR [<function name>]
+      msg[0]
+      msg[1]
+      ...
+      msg[N]
+```
+then exits the program.
 
 # **Functions**

@@ -1,9 +1,9 @@
 # standard imports
 import argparse
 
-# pytools imports
+# toolbox imports
 
-# SimUI imports
+# print imports
 
 # =============================================================================
 # argument defaults

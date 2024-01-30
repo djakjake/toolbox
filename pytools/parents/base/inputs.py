@@ -2,9 +2,8 @@
 import argparse
 
 # toolbox imports
-import pytools.parents.module as module
 
-# {tool} imports
+# base imports
 
 # =============================================================================
 # argument defaults
@@ -18,9 +17,9 @@ class Default:
 # =============================================================================
 
 parser = argparse.ArgumentParser(
-    description = '{Tool} arguments',
+    description = 'Base arguments',
     formatter_class = argparse.ArgumentDefaultsHelpFormatter,
-    parents = [module.parser],
+    add_help = False,
 )
 
 # =============================================================================
@@ -29,6 +28,6 @@ parser = argparse.ArgumentParser(
 
 #parser.add_argument(
 #    help = """
-#    [{Tool}]
+#    [Base]
 #    """
 #)

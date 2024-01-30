@@ -1,15 +1,16 @@
 # standard imports
 
 # toolbox imports
+from pytools.parents.base import Base
 
-# Print imports
+# print imports
 from . inputs import Default
 
 # =============================================================================
 # Print Definition
 # =============================================================================
 
-class Print(Default):
+class Print(Default, Base):
 
     # =========================================================================
     # -------------------------------------------------------------------------
@@ -59,21 +60,4 @@ class Print(Default):
         pass
 
     # =========================================================================
-
-    @staticmethod
-    def _choose_param(key, *default, **kwargs):
-        if key in kwargs:
-            return kwargs[key]
-        elif len(default) == 1:
-            return default[0]
-        elif hasattr(Default, key):
-            return getattr(Default, key)
-        else:
-            print(f"
-                \nERROR [_choose_param] could not determine value from:\
-                \n      key          : {key}\
-                \n      default      : {default}\
-                \n      kwargs (keys): {kwargs.keys()}\
-            ")
-            exit()
 
