@@ -58,11 +58,11 @@ Data
 
 ### Methods
 
-#### '__init__(self, *args, **kwargs)'
+#### `__init__(self, *args, **kwargs)`
 
-#### 'load_input_file(self, *args, **kwargs)'
+#### `load_input_file(self, *args, **kwargs)`
 
-#### 'run_executable_program(self, *args, **kwargs)'
+#### `run_executable_program(self, *args, **kwargs)`
 
 ## GUI
 
@@ -72,14 +72,14 @@ Data
 
 ### Methods
 
-#### '__init__(self, *args, **kwargs)'
+#### `__init__(self, *args, **kwargs)`
 
-#### '_create_frame(self, *args, **kwargs)'
+#### `_create_frame(self, *args, **kwargs)`
 
-#### '_destroy_frame(self, *args, **kwargs)'
+#### `_destroy_frame(self, *args, **kwargs)`
 
-#### '_create_box_select_multiple(self, *args, **kwargs)'
+#### `_create_box_select_multiple(self, *args, **kwargs)`
 
-#### '_create_box_select_binary(self, *args, **kwargs)'
+#### `_create_box_select_binary(self, *args, **kwargs)`
 
-#### '_create_box_user_input(self, *args, **kwargs)'
+#### `_create_box_user_input(self, *args, **kwargs)`
