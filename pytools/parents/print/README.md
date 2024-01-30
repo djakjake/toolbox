@@ -2,6 +2,14 @@
 
 This is a python module to allow for specialized printing instructions that can be used and/or inherited by other modules.
 
+# **Description**
+
+# **Requirements**
+
+# **imitations and Assumptions**
+
+# **How-To**
+
 # **Classes**
 
 ## **Print**
@@ -22,27 +30,27 @@ All output is directed to the terminal out.
 
 ### **Methods**
 
-#### **__init__(self, *args, **kwargs)
+#### **__init__(self, \*args, \*\*kwargs)**
 
 The `Print` constructor. As of right now, no specialized print instructions exist.
 
-#### **_print(self, *args, **kwargs)**
+#### **_print(self, \*args, \*\*kwargs)**
 
-#### **__print_item(self, *args, **kwargs)**
+#### **__print_item(self, \*args, \*\*kwargs)**
 
-#### **__print_list(self, *args, **kwargs)**
+#### **__print_list(self, \*args, \*\*kwargs)**
 
-#### **__print_dictionary(self, *args, **kwargs)**
+#### **__print_dictionary(self, \*args, \*\*kwargs)**
 
-#### **__print_data(self, *args, **kwargs)**
+#### **__print_data(self, \*args, \*\*kwargs)**
 
-#### **_generate_indent(self, *args, **kwargs)**
+#### **_generate_indent(self, \*args, \*\*kwargs)**
 
-#### **_generate_header(self, *args, **kwargs)**
+#### **_generate_header(self, \*args, \*\*kwargs)**
 
-#### **_generate_decorator(self, *args, **kwargs)**
+#### **_generate_decorator(self, \*args, \*\*kwargs)**
 
-#### **_choose_param(key, *default, **kwargs)**
+#### **_choose_param(key, \*default, \*\*kwargs)**
 
 Looks for specified `key` in `kwargs` dictionary.
 - If the `key` does exist, it will fetch and return the item from the `kwargs` dictionary.

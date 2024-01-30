@@ -1,5 +1,3 @@
-# **pytools**
-
 # **functions**
 
 This directory contains an `__init__.py` file that allows aliasing. For example:
@@ -11,7 +9,7 @@ as apposed to:
 from pytools.functions.parse_args import parse_args
 ```
 
-## **def parse_args(*args, **kwargs)**
+## **def parse_args(\*args, \*\*kwargs)**
 
 ```python
 DESCRIPTION:
