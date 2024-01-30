@@ -14,6 +14,9 @@ from . inputs import Default
 
 class Module(Default, Print):
 
+    # =========================================================================
+    # -------------------------------------------------------------------------
+
     def __init__(self, *args, **kwargs):
 
         # save all key word arguments as attributes
@@ -35,6 +38,9 @@ class Module(Default, Print):
         # print the current attributes to terminal out
         self._print("starting attributes:", self.__dict__)
 
+    # -------------------------------------------------------------------------
+    # =========================================================================
+
     def save_state(self, *args, **kwargs):
 
         # choose input parameters
@@ -44,6 +50,8 @@ class Module(Default, Print):
         # store contents into pickle file
         with open(state_file, 'wb') as file:
             pickle.dump(content, file)
+
+    # =========================================================================
 
     def load_state(self, *args, output=False, **kwargs):
 
@@ -64,7 +72,5 @@ class Module(Default, Print):
         else:
             self.__dict__.update(contents)
 
-    @staticmethod
-    def _choose_param(key, default, **kwargs):
-        return kwargs[key] if key in kwargs else default
+    # =========================================================================
 
