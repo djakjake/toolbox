@@ -1,5 +1,4 @@
 # standard imports
-import sys
 
 # toolbox imports
 

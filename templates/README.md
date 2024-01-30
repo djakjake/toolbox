@@ -1,34 +1,32 @@
-# **{tool}**
+# {tool}
 
-# **Description**
+# Description
 
-# **Requirements**
+# Requirements
 
-# **imitations and Assumptions**
+# imitations and Assumptions
 
-# **How-To**
+# How-To
 
-# **Classes**
+# Classes
 
-## **{Tool}**
+## {Tool}
 
-### **Inputs**
+### Inputs
 
 | parameter | default | units | type |description |
 |-----------|---------|-------|------|------------|
 
-### **Outputs**
+### Outputs
 
 File
-|--------------------------------------|
 | basename | destination | description |
 |----------|-------------|-------------|
 
 Data
-|----------------------------------------|
 | parameter | units | type | description |
 |-----------|-------|------|-------------|
 
-### **Methods**
+### Methods
 
-# **Functions**
+# Functions

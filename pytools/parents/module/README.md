@@ -1,18 +1,18 @@
-# **module**
+# module
 
-# **Description**
+# Description
 
-# **Requirements**
+# Requirements
 
-# **imitations and Assumptions**
+# imitations and Assumptions
 
-# **How-To**
+# How-To
 
-# **Classes**
+# Classes
 
-## **module**
+## module
 
-### **Inputs**
+### Inputs
 
 | parameter | default | units | type |description |
 |-----------|---------|-------|------|------------|
@@ -23,7 +23,7 @@
 | `state_file` | `None` | -- | `str` | the path to the previous saved state file. |
 | `tool_name` | `None` | -- | `str` | the name of the tool/sim/project. if not provided, will default to the first `exe_programs` item. |
 
-### **Outputs**
+### Outputs
 
 File
 |--------------------------------------|
@@ -35,16 +35,16 @@ Data
 | parameter | units | type | description |
 |-----------|-------|------|-------------|
 
-### **Methods**
+### Methods
 
-#### **__init__(self, \*args, \*\*kwargs)**
+#### `__init__(self, *args, **kwargs)`
 
 The constructor for the `Module` class. Its main purpose is to set initial attributes through a combination of:
 - run-time user options
 - received key-word arguments
 - loading previous state attributes
 
-#### **save_state(self, \*args, \*\*kwargs)**
+#### `save_state(self, *args, **kwargs)`
 
 Input:
 'state_file = self.state_file`
@@ -53,7 +53,7 @@ Input:
 1) chooses which file and what contents to save
 1) saves contents to `.pkl` file.
 
-#### **load_state(self, \*args, output=False, \*\*kwargs)**
+#### `load_state(self, *args, output=False, **kwargs)`
 
 Input:
 'state_file = self.state_file`
@@ -61,7 +61,7 @@ Input:
 
 If the selected state file exists, an `ERROR` is printed and the program ends; otherwise, the contents are loaded and are either output or saved as attributes.
 
-#### **_choose_param(key, \*default, \*\*kwargs)**
+#### `_choose_param(key, *default, **kwargs)`
 
 Looks for specified `key` in `kwargs` dictionary.
 - If the `key` does exist, it will fetch and return the item from the `kwargs` dictionary.
@@ -69,7 +69,7 @@ Looks for specified `key` in `kwargs` dictionary.
 - If the `key` does not exist and `default` was not provided, will attempt to fetch and return the 'key` attribute from the locally defined `Default` class.
 - If all else fails, perform a hard exit
 
-#### **_error(self, \*msgs, \*\*kwargs)**
+#### `_error(self, *msgs, **kwargs)`
 
 Input:
 *msgs
@@ -84,4 +84,4 @@ ERROR [<function name>]
 ```
 then exits the program.
 
-# **Functions**
+# Functions

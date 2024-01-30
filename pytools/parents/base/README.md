@@ -1,34 +1,32 @@
-# **base**
+# base
 
-# **Description**
+# Description
 
-# **Requirements**
+# Requirements
 
-# **imitations and Assumptions**
+# imitations and Assumptions
 
-# **How-To**
+# How-To
 
-# **Classes**
+# Classes
 
-## **Base**
+## Base
 
-### **Inputs**
+### Inputs
 
 | parameter | default | units | type |description |
 |-----------|---------|-------|------|------------|
 
-### **Outputs**
+### Outputs
 
 File
-|--------------------------------------|
 | basename | destination | description |
 |----------|-------------|-------------|
 
 Data
-|----------------------------------------|
 | parameter | units | type | description |
 |-----------|-------|------|-------------|
 
-### **Methods**
+### Methods
 
-# **Functions**
+# Functions

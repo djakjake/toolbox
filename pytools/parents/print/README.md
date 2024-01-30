@@ -1,22 +1,22 @@
-# **print**
+# print
 
 This is a python module to allow for specialized printing instructions that can be used and/or inherited by other modules.
 
-# **Description**
+# Description
 
-# **Requirements**
+# Requirements
 
-# **imitations and Assumptions**
+# imitations and Assumptions
 
-# **How-To**
+# How-To
 
-# **Classes**
+# Classes
 
-## **Print**
+## Print
 
 `Print` is the main class of the `print` module.
 
-### **Inputs**
+### Inputs
 
 | parameter | default | units | type |description |
 |-----------|---------|-------|------|------------|
@@ -24,30 +24,30 @@ This is a python module to allow for specialized printing instructions that can 
 | `indent` | 0 | -- | `int` | the running counter that tracks the indent level that data will print at. the default value specifies the child module's starting indentation level. |
 | `tabwidth` | 4 | -- | `int` | when indenting lines, the indentation will be incremented/decremented by this amount. |
 
-### **Outputs**
+### Outputs
 
 All output is directed to the terminal out.
 
-### **Methods**
+### Methods
 
-#### **__init__(self, \*args, \*\*kwargs)**
+#### `__init__(self, *args, **kwargs)`
 
 The `Print` constructor. As of right now, no specialized print instructions exist.
 
-#### **_print(self, \*args, \*\*kwargs)**
+#### `_print(self, *args, **kwargs)`
 
-#### **__print_item(self, \*args, \*\*kwargs)**
+#### `__print_item(self, *args, **kwargs)`
 
-#### **__print_list(self, \*args, \*\*kwargs)**
+#### `__print_list(self, *args, **kwargs)`
 
-#### **__print_dictionary(self, \*args, \*\*kwargs)**
+#### `__print_dictionary(self, *args, **kwargs)`
 
-#### **__print_data(self, \*args, \*\*kwargs)**
+#### `__print_data(self, *args, **kwargs)`
 
-#### **_generate_indent(self, \*args, \*\*kwargs)**
+#### `_generate_indent(self, *args, **kwargs)`
 
-#### **_generate_header(self, \*args, \*\*kwargs)**
+#### `_generate_header(self, *args, **kwargs)`
 
-#### **_generate_decorator(self, \*args, \*\*kwargs)**
+#### `_generate_decorator(self, *args, **kwargs)`
 
-# **Functions**
+# Functions
