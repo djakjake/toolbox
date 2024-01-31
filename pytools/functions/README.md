@@ -1,6 +1,4 @@
-# **pytools**
-
-# **functions**
+# Functions
 
 This directory contains an `__init__.py` file that allows aliasing. For example:
 ```python
@@ -11,7 +9,7 @@ as apposed to:
 from pytools.functions.parse_args import parse_args
 ```
 
-## **def parse_args(*args, **kwargs)**
+## `parse_args(*args, **kwargs)`
 
 ```python
 DESCRIPTION:
@@ -26,7 +24,7 @@ to the last one received.
 
 INPUT:
 *args       argument parser objects
-**kwargs    key word arguments
+kwargs    key word arguments
 
 OUTPUT:
 dict

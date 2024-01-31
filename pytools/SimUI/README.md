@@ -1,7 +1,5 @@
 # SimUI
 
-
-
 # Description
 
 A graphical user interface that allows the user to:
@@ -10,14 +8,19 @@ A graphical user interface that allows the user to:
 - save settings
 - execute specified program with specified settings
 
-
-
 # Requirements
-- Python 3.6+
+- Python 3.6+ | 3.10.12
+- tkinter 3.0+ | 8.6
 
+# imitations and Assumptions
 
+# How-To
 
-# Input
+# Classes
+
+## SimUI(GUI)
+
+### Input
 
 | parameter | default | units | type |description |
 |-----------|---------|-------|------|------------|
@@ -42,27 +45,41 @@ A graphical user interface that allows the user to:
   - if there are many|one `input_files` and no `exe_programs`, raise `RuntimeError`
 1) **None and None:** raise `RuntimeError`
 
+### Output
 
-
-# Output
-
-|--------------------------------------|
-| file                                 |
-|--------------------------------------|
+File
 | basename | destination | description |
 |----------|-------------|-------------|
 | `<tool_name>_state.pkl` | `<path_output>/<basename>` | the saved state file that will be saved and/or loaded. |
 
-|----------------------------------------|
-| data                                   |
-|----------------------------------------|
+Data
 | parameter | units | type | description |
 |-----------|-------|------|-------------|
 
+### Methods
 
+#### `__init__(self, *args, **kwargs)`
 
-# Limitations and Assumptions
+#### `load_input_file(self, *args, **kwargs)`
 
+#### `run_executable_program(self, *args, **kwargs)`
 
+## GUI
 
-# How-To
+### Input
+
+### Output
+
+### Methods
+
+#### `__init__(self, *args, **kwargs)`
+
+#### `_create_frame(self, *args, **kwargs)`
+
+#### `_destroy_frame(self, *args, **kwargs)`
+
+#### `_create_box_select_multiple(self, *args, **kwargs)`
+
+#### `_create_box_select_binary(self, *args, **kwargs)`
+
+#### `_create_box_user_input(self, *args, **kwargs)`

@@ -1,10 +1,10 @@
-# **bash**
+# bash
 
 This is the safe space for all general bash scripts in the toolbox. The `set_toolbox.sh` script exists directly in the `toolbox` home directory.
 
-# **scripts**
+# scripts
 
-## **choose_default_os.sh**
+## choose_default_os.sh
 
 This script is used to update the default boot option on a multi-boot compututer (eg: Windows 10 and Ubuntu).
 
@@ -15,7 +15,7 @@ This script is used to update the default boot option on a multi-boot compututer
 1) **NOTE: requires user interaction** the user needs to copy the OS ID into the `DEFAULT_GRUB` line. Once this is done, the user needs to save and exit the file.
 1) runs the update.
 
-## **get_git_branch.sh**
+## get_git_branch.sh
 
 This script exports the function to the bash environment, `get_git_branch`.
 
@@ -32,7 +32,7 @@ light_blue='\e[94m'
 PS1="$light_red\d \t$reset | $light_yellow\s\v$reset | $light_green\$(get_git_branch)$reset | $light_blue\w$reset\n>> "
 ```
 
-## **install_flatpak.sh**
+## install_flatpak.sh
 
 This script follows the [instructions for installing flatpak](https://flathub.org/setup/Ubuntu).
 
@@ -40,7 +40,13 @@ Tested on:
 - Ubuntu 22.04.3 LTS
 - bash5.1
 
-## **setEnv.sh $1**
+## replace.sh $1 $2 ($3)
+
+This script exports the function to the bash environment, `replace`.
+
+This script replaces all instances of `$1` with `$2`, inside the current working directory (or `$3`, if given).
+
+## setEnv.sh $1
 
 This script is used to set up and/or activate a virtual python environment.
 
@@ -49,7 +55,7 @@ This script is used to set up and/or activate a virtual python environment.
 - Activates `$1/vEnv`
 - if a `requirements.txt` file exists in `$1`, installs requirements.
 
-## **system_info.sh**
+## system_info.sh
 
 View system and environmental info that is being used by _toolbox_.
 
@@ -59,7 +65,7 @@ The following version information is included:
 - python
 - g++ compiler
 
-## **update.sh**
+## update.sh
 
 - fetches and installs the latest stable release of Chrome
 - updates all known packages

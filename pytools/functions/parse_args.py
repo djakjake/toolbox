@@ -20,6 +20,6 @@ def parse_args(*args, **kwargs):
     opts = {}
     for parser in args:
         opts_ = parser.parse_args()
-        opts.update(opts_)
+        opts.update(opts_.__dict__)
     opts.update(kwargs)
     return opts

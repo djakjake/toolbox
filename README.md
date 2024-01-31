@@ -1,4 +1,4 @@
-# **toolbox**
+# toolbox
 
 A collection of tools, scripts, functions, files, etc... that can be used for projects.
 
@@ -7,30 +7,48 @@ _toolbox_ was developed and tested with the following system and environment:
 - **python**      : Python 3.10.12
 - **g++ compiler**: g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
 
-# **directories**
+# directories
 
-## **bash**
+## bash
 
 [README.md](https://github.com/djakjake/toolbox/blob/main/bash/README.md)
 
-## **cpp**
+## cpp
 
 [README.md](https://github.com/djakjake/toolbox/blob/main/cpp/README.md)
 
-## **pytools**
+## pytools
 
 [README.md](https://github.com/djakjake/toolbox/blob/main/pytools/README.md)
 
-## **templates**
+## templates
 
 A collection of template files
 
 - `__main__.py`
 - `README.md`
 
-# **Meld**
+# set_toolbox.sh
 
-## **Install**
+This script sets up your bash environment to use toolbox.
+
+The following are added to the environment:
+- **DIR_TOOLBOX**: path to the _toolbox_ repo home directory
+- **PYTHONPATH** : python looks here for imports. set to `$DIR_TOOLBOX`
+- **PATH**       : `$PATH` is updated to look in `$DIR_TOOLBOX` first
+- **DIR_PYTOOLS**: path to `$DIR_TOOLBOX/pytools`
+
+The following functions are added to the bash environment (see [bash/README.md](https://github.com/djakjake/toolbox/blob/main/bash/README.md) for their respective documentation):
+- `get_git_branch`
+- `replace`
+
+If `$DIR_TOOLBOX` already exists, nothing new is added or updated.
+
+# Useful External Additions
+
+## Meld
+
+### Install
 
 _Meld_ is a useful tool for diffing files. To install _Meld_ on Ubuntu, you must install [_flatpak_](https://flathub.org/setup/Ubuntu). _flatpak_ can be installed by running:
 ```bash
@@ -63,7 +81,7 @@ All the current _flatpak_ installations can be viewed with:
 flatpak list --app
 ```
 
-## **Configure _Meld_ for _git_**
+### Configure _Meld_ for _git_
 
 To configure _Meld_ to use as your `git difftool`, copy these [lines](https://github.com/flatpak/flatpak/issues/1423#issuecomment-441337743) into your `~/.gitconfig`.
 ```bash
